@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+#conteiner {
+  display: flex;
+}
+
+#encabezado {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(102, 202, 167, 0.9);
+  z-index: 100;
+}
+#portada {
+  position: relative;
+}
+#banner {
+  z-index: 20;
+}
+#titulo {
+  position: absolute;
+  top: 50%;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  background-color: rgba(102, 202, 167, 0.8);
+  z-index: 1001;
+}
+#subtitulo {
+  padding: 20px;
+  width: 90%;
+  padding: auto;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: rgba(102, 202, 167, 1);
+}
+ul {
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+#menuIzquierdo {
+  width: 60%;
+}
+
+#menuIzquierdo Ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menuIzquierdo Ul li a {
+  font-size: 1.6rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+#menuDerecho {
+  width: 30%;
+}
+#menuDerecho Ul {
+  display: flex;
+}
+#menuDerecho Ul li a {
+  font-size: 1.6rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+#encabezado {
+  align-items: center;
+}
+/* ============  CSS de la pagina Contacot  ================*/
+#conteneedor-contacto {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(102, 202, 167, 0.8);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+/*
+@media only screen and (max-width: 767px) {
+   Estilos específicos para pantallas de celular 
+}
+*/
+#piePagina {
+    display: grid;
+    width: 100%;
+    background-color: rgba(16, 71, 52, 0.8);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*grid-template-columns: 1fr 2fr 1fr 0.3fr;*/
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: wheat;
+  }
+  #mapa{
+    margin-top: 20px;
+  }
+  #redes ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+ion-icon {
+    font-size: 30px;
+    color: white;
+  }
+
+
+/* Estilos para pantallas de tablet (768px a 1023px de ancho) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos específicos para pantallas de tablet */
+  #destacados {
+    display: flex;
+  }
+  #destacados article {
+    padding: 5%;
+  }
+  #galeria article {
+    width: 50%;
+    padding: 5px;
+  }
+  #galeria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*=============== Pie de Pagina ================*/
+  #piePagina {
+    display: grid;
+    width: 100%;
+    background-color: rgba(16, 71, 52, 0.8);
+    grid-template-columns: 1fr 2fr 1fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+  }
+  #mapa{
+    padding: 10px;
+  }
+  #redes ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  ion-icon {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+/* Estilos para pantallas de PC de escritorio (1024px en adelante) */
+@media only screen and (min-width: 1024px) {
+  /* Estilos específicos para pantallas de PC de escritorio */
+  #destacados {
+    display: flex;
+  }
+  #destacados article {
+    padding: 5%;
+  }
+  #galeria article {
+    width: 25%;
+    padding: 5px;
+  }
+  #galeria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*=============== Pie de Pagina ================*/
+  #piePagina {
+    display: grid;
+    width: 100%;
+    background-color: rgba(16, 71, 52, 0.8);
+    grid-template-columns: 1fr 2fr 1fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+  }
+  #mapa{
+    padding: 10px;
+  }
+  #redes ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  ion-icon {
+    font-size: 30px;
+    color: white;
+  }
+}
