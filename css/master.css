@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+    scroll-behavior: smooth;/*Hace que la pagina se deslice suave*/
+}
 
 a {
   text-decoration: none;
@@ -28,16 +31,7 @@ img {
 #banner {
   z-index: 20;
 }
-#titulo {
-  position: absolute;
-  top: 50%;
-  padding: 30px;
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  background-color: rgba(102, 202, 167, 0.8);
-  z-index: 1001;
-}
+
 #subtitulo {
   padding: 20px;
   width: 90%;
@@ -59,7 +53,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
 }
 
 #menuIzquierdo {
@@ -71,12 +65,7 @@ ul {
   justify-content: space-between;
 }
 
-#menuIzquierdo Ul li a {
-  font-size: 1.6rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: black;
-}
+
 #menuDerecho {
   width: 30%;
 }
@@ -84,11 +73,27 @@ ul {
   display: flex;
 }
 #menuDerecho Ul li a {
-  font-size: 1.6rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: black;
-}
+    font-size: 1rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  #menuIzquierdo Ul li a {
+    font-size: 1rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  #titulo {
+    position: absolute;
+    top: 60%;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgba(102, 202, 167, 0.8);
+    z-index: 1001;
+  }
 
 #encabezado {
   align-items: center;
@@ -172,6 +177,28 @@ ion-icon {
 /* Estilos para pantallas de tablet (768px a 1023px de ancho) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* Estilos específicos para pantallas de tablet */
+  #titulo {
+    position: absolute;
+    top: 50%;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(102, 202, 167, 0.8);
+    z-index: 1001;
+  }
+  #menuDerecho Ul li a {
+    font-size: 1rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  #menuIzquierdo Ul li a {
+    font-size: 1rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+  }
   #destacados {
     display: flex;
   }
@@ -199,6 +226,9 @@ ion-icon {
   #mapa{
     padding: 10px;
   }
+  #map-google{
+    padding: 10px;
+  }
   #redes ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -212,6 +242,28 @@ ion-icon {
 /* Estilos para pantallas de PC de escritorio (1024px en adelante) */
 @media only screen and (min-width: 1024px) {
   /* Estilos específicos para pantallas de PC de escritorio */
+  #titulo {
+    position: absolute;
+    top: 50%;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgba(102, 202, 167, 0.8);
+    z-index: 1001;
+  }
+  #menuDerecho Ul li a {
+    font-size: 1.6rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  #menuIzquierdo Ul li a {
+    font-size: 1.6rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+  }
   #destacados {
     display: flex;
   }
@@ -238,6 +290,9 @@ ion-icon {
     color: wheat;
   }
   #mapa{
+    padding: 10px;
+  }
+  #map-google{
     padding: 10px;
   }
   #redes ul {
