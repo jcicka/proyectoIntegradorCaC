@@ -224,6 +224,7 @@ ion-icon {
   #galeria {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
   }
   /*=============== Pie de Pagina ================*/
   #piePagina {
@@ -284,11 +285,13 @@ ion-icon {
   }
   #galeria article {
     width: 25%;
-    padding: 5px;
+    padding: 20px;
   }
   #galeria {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    
   }
 
   /*=============== Pie de Pagina ================*/
