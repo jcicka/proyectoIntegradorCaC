@@ -44,6 +44,18 @@ img {
   margin-top: 20px;
   background-color: rgba(102, 202, 167, 1);
 }
+#sub-titulo2 {
+    padding: 20px;
+    width: 100%;
+    padding: auto;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba(102, 202, 167, 1);
+  }
 ul {
   list-style-type: none;
   justify-content: space-around;
