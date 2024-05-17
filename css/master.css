@@ -35,7 +35,6 @@ img {
 #subtitulo {
   padding: 20px;
   width: 90%;
-  padding: auto;
   text-align: center;
   font-size: 2em;
   border-radius: 20px;
@@ -47,7 +46,6 @@ img {
 #sub-titulo2 {
     padding: 20px;
     width: 100%;
-    padding: auto;
     text-align: center;
     font-size: 2em;
     border-radius: 20px;
@@ -76,7 +74,9 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-
+.producto__imagen{
+  border-radius: 8px;
+}
 
 #menuDerecho {
   width: 30%;
@@ -134,8 +134,10 @@ form {
   margin-right: auto;
   margin-top: 20px;
 }
+
 input[type="text"],
 input[type="email"],
+
 textarea {
   width: 100%;
   padding: 10px;
@@ -144,6 +146,7 @@ textarea {
   border-radius: 5px;
   box-sizing: border-box;
 }
+
 button {
   background-color: #4caf50;
   color: white;
@@ -217,6 +220,9 @@ ion-icon {
   #destacados article {
     padding: 5%;
   }
+
+
+
   #galeria article {
     width: 50%;
     padding: 5px;
@@ -283,6 +289,8 @@ ion-icon {
   #destacados article {
     padding: 5%;
   }
+
+
   #galeria article {
     width: 25%;
     padding: 20px;
@@ -291,7 +299,23 @@ ion-icon {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+
+  }
+  #galeria img{
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px darkgreen ;
+    transition: 0.3s;
+
+  }
+  #galeria img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 7px 2px darkgreen ;
+    transition: 0.3s;
+  }
+
+  #redes .icono:hover{
+    transform: scale(1.3) rotate(360deg);
+    transition: 0.3s;
   }
 
   /*=============== Pie de Pagina ================*/
@@ -317,5 +341,24 @@ ion-icon {
   ion-icon {
     font-size: 30px;
     color: white;
+  }
+  #destacados article img {
+    border-radius: 8px;
+    box-shadow: 0 0 7px 2px darkgreen ;
+    transition: 0.3s;
+  }
+  .descripcion{
+    padding: 15px 0;
+  }
+  .detalle{
+    color: white;
+    background-color: rgb(25,135,84);
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  .detalle:active{
+    box-shadow: 0 0 3px 2px forestgreen;
+    background-color: #cccccc;
+    color: darkgreen;
   }
 }
