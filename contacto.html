@@ -6,6 +6,7 @@
     <title>Contacto</title>
     <link rel="shortcut icon" href="./img/icomo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/master.css">
+    <script defer src="./contacto.js"></script>
 </head>
 <body>
 <section id="contenedor-contacto">
@@ -42,9 +43,11 @@
     <h2 id="subtitulo">Dejanos tus datos para que te contactemos</h2>
 
     <section id="contacto">
-        <h2>titulo</h2>
-        <ion-icon name="people"></ion-icon>
+        <h2>¡ Gracias por contactarnos !<span><img class="animado" src="./img/gracias.svg" alt=""></span></h2>
+
+
         <form action="#" method="POST">
+            <ion-icon class="icon-contacto" name="people"></ion-icon>
 
             <label for="nombre">Nombre y Apellido:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -72,7 +75,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <button type="submit" value="Enviar">Enviar</button>
+            <button type="submit" value="Enviar" onclick="validarContacto()">Enviar</button>
 
         </form>
     </section>
@@ -96,7 +99,6 @@
                 <li>
                     <a href="#">
                         <ion-icon name="logo-instagram"></ion-icon>
-
                     </a>
                 </li>
                 <li>
@@ -123,6 +125,7 @@
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
 ></script>
+
 <script
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
