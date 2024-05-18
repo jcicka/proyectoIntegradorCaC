@@ -12,16 +12,8 @@ function validarContacto(){
     }
 
     //validacion telefono
-    telefono = document.getElementById('telefono').value
-    alert("el fin13")
-
-    tel = telefono.replace(/ /g, "")
-    alert("el fin1")
-    telInt = tel.parseInt()
-
-    console.log(typeof(telInt));
-    console.log(telInt)
-    alert("el fin2")
+    telefono = document.getElementById('telefono').value.replace(/ /g, "")
+   
     if(!(/^(\d{10}|\d{11})$/.test(telefono))){
         alert("el telefono es invalido, por favor ingrese un nuemro de 10 u 11 digitos")
     }else{
@@ -29,6 +21,4 @@ function validarContacto(){
     }
 
     alert("el fin")
-   
-
 }
