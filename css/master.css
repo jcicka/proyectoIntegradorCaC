@@ -201,6 +201,9 @@ button:hover {
   #mapa{
     margin-top: 20px;
   }
+#mapa iframe{
+  width: 100%;
+}
   #redes ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -305,6 +308,9 @@ ion-icon {
   #mapa{
     padding: 10px;
   }
+  #mapa iframe{
+    width: 100%;
+  }
   #map-google{
     padding: 10px;
   }
@@ -351,6 +357,7 @@ ion-icon {
     z-index: 1001;
   }
   #menuDerecho Ul li a {
+    position: relative;
     font-size: 1.6rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -409,6 +416,9 @@ ion-icon {
   }
   #mapa{
     padding: 10px;
+  }
+  #mapa iframe{
+    width: 100%;
   }
   #map-google{
     padding: 10px;
