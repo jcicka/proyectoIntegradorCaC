@@ -26,7 +26,7 @@ img {
     width: 100%;
     padding: 10px;
     background-color: rgba(102, 202, 167, 0.9);
-    z-index: 100;
+    z-index: 1000;
 }
 
 #encabezado:hover {
@@ -124,7 +124,7 @@ ul {
     text-align: center;
     font-size: 1.3rem;
     background-color: rgba(102, 202, 167, 0.8);
-    z-index: 1001;
+    z-index: 101;
 }
 
 #encabezado {
@@ -195,6 +195,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.subTgaleria{
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -282,7 +286,7 @@ ion-icon {
         text-align: center;
         font-size: 2rem;
         background-color: rgba(102, 202, 167, 0.8);
-        z-index: 1001;
+        z-index: 101;
     }
 
     #menuDerecho Ul li a {
@@ -324,6 +328,10 @@ ion-icon {
         width: 50%;
         padding: 5px;
     }
+    .subTgaleria{
+      margin-bottom: 10px;
+    }
+    
 
     #galeria {
         display: flex;
@@ -369,6 +377,7 @@ ion-icon {
         box-shadow: 0 0 7px 2px darkgreen;
         transition: 0.3s;
     }
+    
 
     .descripcion {
         padding: 15px 0;
@@ -399,7 +408,7 @@ ion-icon {
         text-align: center;
         font-size: 3rem;
         background-color: rgba(102, 202, 167, 0.8);
-        z-index: 1001;
+        z-index: 101;
     }
 
     #menuDerecho Ul li a {
@@ -416,7 +425,10 @@ ion-icon {
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         color: black;
     }
-
+    /* #subtitulo{
+      width: 100%;
+      flex-direction: column;
+    } */
     #destacados {
         display: flex;
     }
@@ -449,6 +461,9 @@ ion-icon {
         transform: scale(1.05);
         box-shadow: 0 0 7px 2px darkgreen;
         transition: 0.3s;
+    }
+    .subTgaleria{
+      margin-bottom: 10px;
     }
 
     #redes .icono:hover {
