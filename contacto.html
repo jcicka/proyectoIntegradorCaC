@@ -6,26 +6,28 @@
     <title>Contacto</title>
     <link rel="shortcut icon" href="./img/icomo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/master.css">
-    <script defer src="./contacto.js"></script>
+    <link rel="stylesheet" href="./css/menu.css">
+    <script defer src="js/contacto.js"></script>
+    <script src="https://kit.fontawesome.com/e190075d06.js" crossorigin="anonymous"></script>
+    <script defer src="./js/menu.js"></script>
+
 </head>
 <body>
 <section id="contenedor-contacto">
     <header id="encabezado">
-        <div id="menu">
-            <nav id="menuIzquierdo">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./herramientas.html">Herramientas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <nav id="menuDerecho">
-                <ul>
-                    <li><a href="#">Iniciar sesión</a></li>
-                    <li><a href="#">Registro</a></li>
-                </ul>
-            </nav>
-        </div>
+        <i  class="menu_icon fa-solid fa-bars"></i>
+        <nav id="menu_nav" class="menu">
+            <div class="menu_logo">
+                <a href="./index.html"> <img class="logo" src="./img/logo_vivero.png" alt=""></a>
+            </div>
+            <ul class="menu_items">
+                <li class="item"><i class="icon fa-solid fa-house-chimney"></i> <a href="./index.html">Inicio</a></li>
+                <li class="item"><i class="icon fa-solid fa-trowel"></i><a href="./herramientas.html">Herramientas</a></li>
+                <li class="item"><i class="icon fa-solid fa-user-group"></i><a href="./contacto.html">Contacto</a></li>
+                <li class="item"><i class="icon fa-solid fa-user-check"></i><a href="#">Iniciar sesión</a></li>
+                <li class="item"><i class="icon fa-solid fa-user-plus"></i><a href="#">Registro</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="portada">

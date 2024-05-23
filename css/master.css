@@ -20,22 +20,6 @@ img {
     display: flex;
 }
 
-#encabezado {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(102, 202, 167, 0.9);
-    z-index: 1000;
-}
-
-#encabezado:hover {
-    background-color: rgb(5, 84, 55);
-}
-
-#menuIzquierdo li a:hover, #menuDerecho li a:hover {
-    color: white;
-}
 
 #portada {
     position: relative;
@@ -74,46 +58,9 @@ ul {
     justify-content: space-around;
 }
 
-#menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-}
-
-#menuIzquierdo {
-    width: 60%;
-}
-
-#menuIzquierdo Ul {
-    display: flex;
-    justify-content: space-between;
-}
 
 .producto__imagen {
     border-radius: 8px;
-}
-
-#menuDerecho {
-    width: 30%;
-}
-
-#menuDerecho Ul {
-    display: flex;
-}
-
-#menuDerecho Ul li a {
-    font-size: 1rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: black;
-}
-
-#menuIzquierdo Ul li a {
-    font-size: 1rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: black;
 }
 
 #titulo {
@@ -127,21 +74,8 @@ ul {
     z-index: 101;
 }
 
-#encabezado {
-    align-items: center;
-}
 
 /* ============  CSS de la pagina Contacot  ================*/
-#conteneedor-contacto {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 form {
     max-width: 500px;
@@ -155,12 +89,14 @@ form {
     margin-right: auto;
     margin-top: 20px;
 }
-
+#galeria{
+    padding: 10px;
+}
 #galeria img {
     border-radius: 8px;
     box-shadow: 0 0 5px 1px darkgreen;
     transition: 0.3s;
-
+    margin: 20px 0;
 }
 
 #galeria img:hover {
@@ -170,7 +106,10 @@ form {
 }
 
 #galeria article, #destacados article {
-    padding: 10px 20px;
+    padding: 20px;
+    /*border: 1px solid var(--green-900);*/
+    /*border-radius: 10px;*/
+    /*margin: 10px 0;*/
 }
 
 #subtitulo, #sub-titulo2 {
@@ -197,8 +136,8 @@ button {
     cursor: pointer;
 }
 
-.subTgaleria{
-  margin-bottom: 10px;
+.subTgaleria {
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -262,6 +201,7 @@ ion-icon {
     background-color: rgb(25, 135, 84);
     padding: 6px 12px;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 .detalle:active {
@@ -273,6 +213,7 @@ ion-icon {
 #sub-titulo2 {
     margin-bottom: 20px;
 }
+
 .icon-contacto {
     width: 100%;
     text-align: center;
@@ -318,20 +259,6 @@ ion-icon {
         z-index: 101;
     }
 
-    #menuDerecho Ul li a {
-        font-size: 1rem;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        color: black;
-    }
-
-    #menuIzquierdo Ul li a {
-        font-size: 1rem;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        color: black;
-    }
-
     #destacados {
         display: flex;
     }
@@ -344,7 +271,7 @@ ion-icon {
         border-radius: 8px;
         box-shadow: 0 0 5px 1px darkgreen;
         transition: 0.3s;
-
+        margin-bottom: 10px;
     }
 
     #galeria img:hover {
@@ -355,12 +282,13 @@ ion-icon {
 
     #galeria article {
         width: 50%;
-        padding: 5px;
+        padding: 20px;
     }
-    .subTgaleria{
-      margin-bottom: 10px;
+
+    .subTgaleria {
+        margin-bottom: 10px;
     }
-    
+
 
     #galeria {
         display: flex;
@@ -406,7 +334,7 @@ ion-icon {
         box-shadow: 0 0 7px 2px darkgreen;
         transition: 0.3s;
     }
-    
+
 
     .descripcion {
         padding: 15px 0;
@@ -417,6 +345,7 @@ ion-icon {
         background-color: rgb(25, 135, 84);
         padding: 6px 12px;
         border-radius: 8px;
+        margin-top: 10px;
     }
 
     .detalle:active {
@@ -424,6 +353,7 @@ ion-icon {
         background-color: #cccccc;
         color: darkgreen;
     }
+
     .icon-contacto {
         width: 100%;
         text-align: center;
@@ -454,6 +384,9 @@ ion-icon {
             transform: scale(1.5);
         }
     }
+    .producto h2{
+        height: 50px;
+    }
 }
 
 /* Estilos para pantallas de PC de escritorio (1024px en adelante) */
@@ -470,24 +403,6 @@ ion-icon {
         z-index: 101;
     }
 
-    #menuDerecho Ul li a {
-        position: relative;
-        font-size: 1.6rem;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        color: black;
-    }
-
-    #menuIzquierdo Ul li a {
-        font-size: 1.6rem;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        color: black;
-    }
-    /* #subtitulo{
-      width: 100%;
-      flex-direction: column;
-    } */
     #destacados {
         display: flex;
     }
@@ -513,7 +428,6 @@ ion-icon {
         border-radius: 8px;
         box-shadow: 0 0 5px 1px darkgreen;
         transition: 0.3s;
-
     }
 
     #galeria img:hover {
@@ -521,8 +435,9 @@ ion-icon {
         box-shadow: 0 0 7px 2px darkgreen;
         transition: 0.3s;
     }
-    .subTgaleria{
-      margin-bottom: 10px;
+
+    .subTgaleria {
+        margin-bottom: 10px;
     }
 
     #redes .icono:hover {
@@ -616,5 +531,11 @@ ion-icon {
             transform: scale(1.5);
         }
     }
+
+    #contenedor-contacto{
+        background-image: url("../img/background_contacto.jpg");
+        background-size: cover;
+    }
+
 
 }
