@@ -1,3 +1,19 @@
+
+/* VARIABLES DE LA GAMA DE COLORES DEL SITIO */
+:root {
+    --green-50: #F0FAF6;
+    --green-100: #E1F4EE;
+    --green-200: #C2EADC;
+    --green-300: #A4DFCB;
+    --green-400: #86D5B9;
+    --green-500: #66CAA7;
+    --green-600: #3FB68C;
+    --green-700: #2F8869;
+    --green-800: #205B46;
+    --green-900: #102D23;
+    --green-950: #081712;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,235 +24,248 @@ html {
     scroll-behavior: smooth; /*Hace que la pagina se deslice suave*/
 }
 
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-}
-
-#conteiner {
-    display: flex;
-}
-
-
-#portada {
-    position: relative;
-}
-
-#banner {
-    z-index: 20;
-}
-
-#subtitulo {
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    font-size: 2em;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background-color: rgba(102, 202, 167, 1);
-}
-
-#sub-titulo2 {
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background-color: rgba(102, 202, 167, 1);
-}
-
-ul {
-    list-style-type: none;
-    justify-content: space-around;
-}
-
-
-.producto__imagen {
-    border-radius: 8px;
-}
-
-#titulo {
-    position: absolute;
-    top: 60%;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 1.3rem;
-    background-color: rgba(102, 202, 167, 0.8);
-    z-index: 101;
-}
-
-
-/* ============  CSS de la pagina Contacto  ================*/
-
-form {
-    max-width: 500px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(102, 202, 167, 0.8);
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-/*=====================================================================*/
-
-#galeria{
-    padding: 10px;
-}
-#galeria img {
-    border-radius: 8px;
-    box-shadow: 0 0 5px 1px darkgreen;
-    transition: 0.3s;
-    margin: 20px 0;
-}
-
-#galeria img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 7px 2px darkgreen;
-    transition: 0.3s;
-}
-
-#galeria article, #destacados article {
-    padding: 20px;
-}
-
-#subtitulo, #sub-titulo2 {
-    box-shadow: 0 2px 6px darkgreen;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.subTgaleria {
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/*=================== CSS CORREPONDIENTE AL PIE DE PAGINA==============================*/
-#piePagina {
-    display: grid;
-    width: 100%;
-    background-color: rgba(16, 71, 52, 0.8);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: wheat;
-}
-
-#mapa {
-    margin-top: 20px;
-}
-
-#mapa iframe {
-    width: 100%;
-}
-
-#redes ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-ion-icon {
-    font-size: 30px;
-    color: white;
-}
-
-#destacados article img {
-    border-radius: 8px;
-    box-shadow: 0 0 7px 2px darkgreen;
-    transition: 0.3s;
-    margin-top: 20px;
-}
-
-.producto {
-    width: 100%;
-
-}
-
-.descripcion {
-    padding: 15px 0;
-}
-
-/*==========detalle CORRESPONDE A LOS BOTONES Agregar DE LA PAGINA====================*/
-.detalle {
-    color: white;
-    background-color: rgb(25, 135, 84);
-    padding: 6px 12px;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-.detalle:active {
-    box-shadow: 0 0 3px 2px forestgreen;
-    background-color: #cccccc;
-    color: darkgreen;
-}
-
-#sub-titulo2 {
-    margin-bottom: 20px;
-}
-
-.icon-contacto {
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-}
-
-#contacto h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.animado {
-    width: 40px;
-    height: 40px;
-    margin: 0 30px;
-    animation-name: contactoAnimado;
-    animation-play-state: running;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-/*================Aplica animacion al icono en la pagina de Contacto=============*/
-@keyframes contactoAnimado {
-    0% {
-        transform: scale(1);
+@media only screen and (max-width: 767px) {
+    a {
+        text-decoration: none;
     }
-    100% {
-        transform: scale(1.5);
+
+    img {
+        width: 100%;
+    }
+
+    #conteiner {
+        display: flex;
+    }
+
+
+    #portada {
+        position: relative;
+    }
+
+    #banner {
+        z-index: 20;
+    }
+
+    #subtitulo {
+        padding: 20px;
+        width: 90%;
+        text-align: center;
+        font-size: 2em;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(102, 202, 167, 1);
+    }
+
+    #sub-titulo2 {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(102, 202, 167, 1);
+    }
+
+    ul {
+        list-style-type: none;
+        justify-content: space-around;
+    }
+
+
+    .producto__imagen {
+        border-radius: 8px;
+    }
+
+    #titulo {
+        position: absolute;
+        top: 60%;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        background-color: rgba(102, 202, 167, 0.8);
+        z-index: 101;
+    }
+
+
+    /* ============  CSS de la pagina Contacto  ================*/
+    form {
+        max-width: 500px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(102, 202, 167, 0.8);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    /*=====================================================================*/
+    #galeria {
+        padding: 10px;
+    }
+
+    #galeria img {
+        border-radius: 8px;
+        box-shadow: 0 0 5px 1px darkgreen;
+        transition: 0.3s;
+        margin: 20px 0;
+    }
+
+    #galeria img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 7px 2px darkgreen;
+        transition: 0.3s;
+    }
+
+    #galeria article, #destacados article {
+        padding: 20px;
+    }
+
+    #subtitulo, #sub-titulo2 {
+        box-shadow: 0 2px 6px darkgreen;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .subTgaleria {
+        margin-bottom: 10px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /*=================== CSS CORREPONDIENTE AL PIE DE PAGINA==============================*/
+    #piePagina {
+        display: grid;
+        width: 100%;
+        background-color: rgba(16, 71, 52, 0.8);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: wheat;
+    }
+
+    #mapa {
+        margin-top: 20px;
+    }
+
+    #mapa iframe {
+        width: 100%;
+    }
+
+    #redes ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ion-icon {
+        font-size: 30px;
+        color: white;
+    }
+
+    #destacados article img {
+        border-radius: 8px;
+        box-shadow: 0 0 7px 2px darkgreen;
+        transition: 0.3s;
+        margin-top: 20px;
+    }
+
+    .producto {
+        width: 100%;
+
+    }
+
+    .descripcion {
+        padding: 15px 0;
+    }
+
+    /*==========detalle CORRESPONDE A LOS BOTONES Agregar DE LA PAGINA====================*/
+    .detalle {
+        color: white;
+        background-color: rgb(25, 135, 84);
+        padding: 6px 12px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .detalle:active {
+        box-shadow: 0 0 3px 2px forestgreen;
+        background-color: #cccccc;
+        color: darkgreen;
+    }
+
+    #sub-titulo2 {
+        margin-bottom: 20px;
+    }
+
+    .icon-contacto {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #contacto h2 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .animado {
+        width: 40px;
+        height: 40px;
+        margin: 0 30px;
+        animation-name: contactoAnimado;
+        animation-play-state: running;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+
+    /*================Aplica animacion al icono en la pagina de Contacto=============*/
+    @keyframes contactoAnimado {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
+    .card{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .card-title{
+        background-color: var(--green-100);
+        font-size: 1.1rem;
+        border-radius: 8px;
+        padding: 3px 0 ;
     }
 }
 
@@ -379,7 +408,7 @@ ion-icon {
             transform: scale(1.5);
         }
     }
-    .producto h2{
+    .producto h2 {
         height: 50px;
     }
 
@@ -528,10 +557,11 @@ ion-icon {
         }
     }
 
-    #contenedor-contacto{
+    #contenedor-contacto {
         background-image: url("../img/background_contacto.jpg");
         background-size: cover;
     }
+
     /*.oferta{*/
     /*    position: absolute;*/
     /*    width: 350px;*/
@@ -557,7 +587,7 @@ ion-icon {
     /*    transition: 1s;*/
     /*    font-family: sans-serif;*/
     /*}*/
-    .desc{
+    .desc {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -572,6 +602,7 @@ ion-icon {
         animation-duration: 0.3s;
         animation-direction: alternate;
     }
+
     /*@keyframes oferta {*/
     /*    0%{*/
     /*        transform: translate(-50%, -50%) rotate(-25deg) scale(1);*/
