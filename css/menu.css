@@ -1,3 +1,5 @@
+
+/* VARIABLES DE LA GAMA DE COLORES DEL SITIO */
 :root {
     --green-50: #F0FAF6;
     --green-100: #E1F4EE;
@@ -42,6 +44,7 @@
 
     }
 
+    /* AGREGA LA CLASE ACTIVE AL MENU PARA CELULARES */
     .active {
         display: flex;
         transform: translateY(70px);
@@ -134,6 +137,7 @@
         visibility: hidden;
     }
 
+    /* ICONOS DEL MENU */
     .icon {
 
         margin: 0 4px;
