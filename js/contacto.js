@@ -1,12 +1,22 @@
-function validarContacto() {
+//Probablemente este arcihco se podria renombrar cono validaciones.js o algo asi
 
+function validarEmail(){
     //validacion del email
     let mail = document.getElementById('email').value
 
     if (!(/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(mail))) {
         alert("es invalido el email, reescribalo")
     }
+}
 
+
+function validarLogin(){
+    validarEmail()
+}
+
+function validarContacto() {
+
+    validarEmail()
     //validacion telefono
 
     let telefono = document.getElementById('telefono').value.replace(/ /g, "")
