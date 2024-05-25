@@ -2,7 +2,7 @@ const botonAbrirMenu = document.querySelector('.menu_icon');
 const menu = document.querySelector('#menu_nav');
 const menu_cerrar = document.querySelector('.cerrar');
 
-
+// CONTROLA Y HACE EL CAMBIO EN  EL MENU BAR EN EL MODO CELULAR
 botonAbrirMenu.addEventListener('click', (ev) => {
     menu.classList.toggle('active');
 

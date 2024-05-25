@@ -89,6 +89,19 @@ form {
     margin-right: auto;
     margin-top: 20px;
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/*=====================================================================*/
+
 #galeria{
     padding: 10px;
 }
@@ -107,24 +120,10 @@ form {
 
 #galeria article, #destacados article {
     padding: 20px;
-    /*border: 1px solid var(--green-900);*/
-    /*border-radius: 10px;*/
-    /*margin: 10px 0;*/
 }
 
 #subtitulo, #sub-titulo2 {
     box-shadow: 0 2px 6px darkgreen;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 
 button {
@@ -144,18 +143,13 @@ button:hover {
     background-color: #45a049;
 }
 
-/*
-@media only screen and (max-width: 767px) {
-   Estilos específicos para pantallas de celular 
-}
-*/
+/*=================== CSS CORREPONDIENTE AL PIE DE PAGINA==============================*/
 #piePagina {
     display: grid;
     width: 100%;
     background-color: rgba(16, 71, 52, 0.8);
     margin-top: 10px;
     margin-bottom: 10px;
-    /*grid-template-columns: 1fr 2fr 1fr 0.3fr;*/
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -196,6 +190,7 @@ ion-icon {
     padding: 15px 0;
 }
 
+/*==========detalle CORRESPONDE A LOS BOTONES Agregar DE LA PAGINA====================*/
 .detalle {
     color: white;
     background-color: rgb(25, 135, 84);
@@ -235,7 +230,7 @@ ion-icon {
     animation-iteration-count: infinite;
     animation-duration: 1s;
 }
-
+/*================Aplica animacion al icono en la pagina de Contacto=============*/
 @keyframes contactoAnimado {
     0% {
         transform: scale(1);
