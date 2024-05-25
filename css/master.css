@@ -387,6 +387,7 @@ ion-icon {
     .producto h2{
         height: 50px;
     }
+
 }
 
 /* Estilos para pantallas de PC de escritorio (1024px en adelante) */
@@ -536,6 +537,57 @@ ion-icon {
         background-image: url("../img/background_contacto.jpg");
         background-size: cover;
     }
-
-
+    /*.oferta{*/
+    /*    position: absolute;*/
+    /*    width: 350px;*/
+    /*    height: 350px;*/
+    /*    top: -400px;*/
+    /*    left: 400px;*/
+    /*    z-index: 1010;*/
+    /*    background-image: url("../img/oferta.jpg");*/
+    /*    border: 2px solid yellow;*/
+    /*    border-radius: 50%;*/
+    /*    padding: 40px;*/
+    /*    background-color: #102D23;*/
+    /*    box-shadow: 0 0 50px 10px yellow;*/
+    /*    transition: 1s;*/
+    /*}*/
+    /*.active_oferta{*/
+    /*    opacity: 1;*/
+    /*    background-image: url("../img/oferta.jpg");*/
+    /*    top: 50%;*/
+    /*    left: 50%;*/
+    /*    transform: translate(-50%, -50%) rotate(1440deg);*/
+    /*    box-shadow: 0 0 50px 10px yellow;*/
+    /*    transition: 1s;*/
+    /*    font-family: sans-serif;*/
+    /*}*/
+    .desc{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+        font-size: 2rem;
+        color: yellow;
+        text-align: center;
+        animation-name: oferta;
+        animation-play-state: running;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-duration: 0.3s;
+        animation-direction: alternate;
+    }
+    /*@keyframes oferta {*/
+    /*    0%{*/
+    /*        transform: translate(-50%, -50%) rotate(-25deg) scale(1);*/
+    /*        -webkit-text-stroke: 1px;*/
+    /*        -webkit-text-stroke-color: #4caf50;*/
+    /*    }*/
+    /*    100%{*/
+    /*        transform: translate(-50%, -50%) rotate(-25deg) scale(1.8);*/
+    /*        text-shadow: 5px 5px 30px darkred;*/
+    /*        -webkit-text-stroke: 2px;*/
+    /*        -webkit-text-stroke-color: darkred;*/
+    /*    }*/
+    /*}*/
 }
