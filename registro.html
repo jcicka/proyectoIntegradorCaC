@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Registro</title>
     <link rel="shortcut icon" href="./img/icomo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -43,13 +43,13 @@
 
     <!--      SECCION CONTACTO-->
 
-    <h2 id="subtitulo">Dejanos tus datos para que te contactemos</h2>
+    <h2 id="subtitulo">Registrate con Nosotros</h2>
 
     <section id="contacto">
-        <h2>¡ Gracias por contactarnos !<span><img class="animado" src="./img/gracias.svg" alt=""></span></h2>
+        <h2>¡ Gracias por tu Registro !<span><img class="animado" src="./img/gracias.svg" alt=""></span></h2>
 
 
-        <!-- FORMULARIO DONDE EL VISITANTE DEJA SUS DATOS -->
+        <!-- FORMULARIO DONDE EL VISITANTE SE REGISTRA -->
         <form action="#" method="POST">
             <ion-icon class="icon-contacto" name="people"></ion-icon>
 
@@ -58,26 +58,9 @@
 
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="telefono">Telefono:</label>
-            <input type="text" id="telefono" name="telefono" required>
-
-            <fieldset>
-                <legend>Elija la opcion</legend>
-
-                <label for="celular">Celular</label>
-                <input type="radio" name="tipo" id="celular" value="">
-
-                <label for="celular">Fijo</label>
-                <input type="radio" name="tipo" id="fijo" value="">
-            </fieldset>
-
-
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+           
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
             <button type="submit" value="Enviar" onclick="validarContacto()">Enviar</button>
 
