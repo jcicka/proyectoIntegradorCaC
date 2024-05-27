@@ -6,7 +6,7 @@
     --green-300: #A4DFCB;
     --green-400: #86D5B9;
     --green-500: #66CAA7;
-    --green-600: #3FB68C;
+    --green-600: rgba(63, 182, 140, 0.31);
     --green-700: #2F8869;
     --green-800: #205B46;
     --green-900: #102D23;
@@ -22,8 +22,6 @@
 html {
     scroll-behavior: smooth; /*Hace que la pagina se deslice suave*/
 }
-
-
 a {
     text-decoration: none;
 }
@@ -59,7 +57,7 @@ img {
 
 #sub-titulo2 {
     padding: 20px;
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: 2em;
     border-radius: 20px;
@@ -88,6 +86,7 @@ ul {
     font-size: 1.3rem;
     background-color: rgba(102, 202, 167, 0.8);
     z-index: 101;
+
 }
 
 
@@ -103,12 +102,35 @@ form {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+
+}
+.opcion_telefono{
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+
 }
 
 #contenedor-contacto {
-    background-image: url("../img/background_contacto.jpg");
-    background-size: cover;
+    z-index: 0;
+    position: relative;
 }
+#contenedor-contacto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/background_contacto.jpg") top;
+    background-size: cover;
+    filter: ;
+    z-index: -1;
+}
+
 
 input[type="text"],
 input[type="email"],
@@ -124,7 +146,7 @@ textarea {
 
 /*=====================================================================*/
 #galeria {
-    padding: 10px;
+    padding: 0;
 }
 
 #galeria img {
@@ -141,7 +163,7 @@ textarea {
 }
 
 #galeria article, #destacados article {
-    padding: 20px;
+    padding: 0;
 }
 
 #subtitulo, #sub-titulo2 {
