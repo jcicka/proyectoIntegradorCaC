@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:
+     0;
+}
+:root {
+    --green-50: #F0FAF6;
+    --green-100: #E1F4EE;
+    --green-200: #C2EADC;
+    --green-300: #A4DFCB;
+    --green-400: #86D5B9;
+    --green-500: #66CAA7;
+    --green-600: #3FB68C;
+    --green-700: #2F8869;
+    --green-800: #205B46;
+    --green-900: #102D23;
+    --green-950: #081712;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    #tituloLogin {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgba(102, 202, 167, 1);
+    }
+
+    form {
+        max-width: 500px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(102, 202, 167, 0.8);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;    
+    }
+    
+    button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}
