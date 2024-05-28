@@ -43,7 +43,7 @@ img {
     z-index: 20;
 }
 
-#subtitulo {
+.subtitulo {
     padding: 20px;
     width: 90%;
     text-align: center;
@@ -170,7 +170,7 @@ textarea {
     padding: 0;
 }
 
-#subtitulo, #sub-titulo2 {
+.subtitulo, #sub-titulo2 {
     box-shadow: 0 2px 6px darkgreen;
 }
 

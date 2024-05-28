@@ -38,6 +38,10 @@
 
         background-color: rgba(102, 202, 167, 1);
     }
+    #tituloLogin h2{
+        text-align: center;
+        margin: 20px 0;
+    }
 
     form {
         max-width: 500px;
