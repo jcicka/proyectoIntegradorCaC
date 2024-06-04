@@ -1,0 +1,12 @@
+### Screenshot de las distintas Vistas Responsive
+
+
+![NOTEBOOK 1366PX](screenshot/notebook-1717472388536.jpeg)
+
+![PC ESCRITORIO](screenshot/PC%20ESCRITORIO%20PANTALLA%20NORMAL-1717472431608.jpeg)
+
+![TABLET](screenshot/TABLET-1717472435340.jpeg)
+
+![MOVIL Y TABLET](screenshot/YO%20MOVIL%20Y%20TABLET%20PEQUEÑA-1717472439070.jpeg)
+
+![MOVIL](screenshot/YO%20MOVIL-1717472443656.jpeg)
