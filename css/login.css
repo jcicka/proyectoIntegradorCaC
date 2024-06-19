@@ -4,19 +4,6 @@
     padding:
      0;
 }
-:root {
-    --green-50: #F0FAF6;
-    --green-100: #E1F4EE;
-    --green-200: #C2EADC;
-    --green-300: #A4DFCB;
-    --green-400: #86D5B9;
-    --green-500: #66CAA7;
-    --green-600: #3FB68C;
-    --green-700: #2F8869;
-    --green-800: #205B46;
-    --green-900: #102D23;
-    --green-950: #081712;
-}
 
 @media only screen and (max-width: 767px) {
 

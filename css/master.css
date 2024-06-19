@@ -48,18 +48,6 @@ img {
 }
 
 .subtitulo {
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    font-size: 2em;
-    background-size: cover;
-    background: rgba(102, 202, 167, 1) url("/img/titulos.png") center;
-    background-blend-mode: screen;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    /*background-color: rgba(102, 202, 167, 1);*/
 }
 
 #sub-titulo2 {
@@ -94,88 +82,22 @@ ul {
     font-size: 1.3rem;
     background-color: rgba(102, 202, 167, 0.8);
     z-index: 101;
-
 }
 
 
 /* ============  CSS de la pagina Contacto  ================*/
-form {
-    max-width: 500px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(102, 202, 167, 0.8);
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-#registro input {
-    margin: 10px 0;
-    height: 40px;
-}
-
-.opcion_telefono {
-    width: 50%;
-    height: 50px;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 8px;
-
-}
-
-#contenedor-contacto {
-    z-index: 0;
-    position: relative;
-}
-
-#contenedor-contacto::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../img/background_contacto.jpg"), var(--green-500) top;
-    background-size: cover;
-    background-blend-mode: lighten;
-    filter: ;
-    z-index: -1;
-}
 
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
+
+
+
 
 /*=====================================================================*/
 #galeria {
     padding: 0;
 }
 
-#galeria img {
-    border-radius: 8px;
-    box-shadow: 0 0 5px 1px darkgreen;
-    transition: 0.3s;
-    margin: 20px 0;
-}
 
-#galeria img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 7px 2px darkgreen;
-    transition: 0.3s;
-}
 
 #galeria article, #destacados article {
     padding: 0;
@@ -251,7 +173,7 @@ ion-icon {
 }
 
 /*==========detalle CORRESPONDE A LOS BOTONES Agregar DE LA PAGINA====================*/
-.detalle {
+.btn_agregar {
     color: white;
     background-color: rgb(25, 135, 84);
     padding: 6px 12px;
@@ -259,7 +181,7 @@ ion-icon {
     margin-top: 10px;
 }
 
-.detalle:active {
+.btn_agregar:active {
     box-shadow: 0 0 3px 2px forestgreen;
     background-color: #cccccc;
     color: darkgreen;
@@ -273,32 +195,6 @@ ion-icon {
     width: 100%;
     text-align: center;
     font-size: 3rem;
-}
-
-#contacto h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.animado {
-    width: 40px;
-    height: 40px;
-    margin: 0 30px;
-    animation-name: contactoAnimado;
-    animation-play-state: running;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-
-/*================Aplica animacion al icono en la pagina de Contacto=============*/
-@keyframes contactoAnimado {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.5);
-    }
 }
 
 .card {
@@ -410,7 +306,7 @@ ion-icon {
         padding: 15px 0;
     }
 
-    .detalle {
+    .btn_agregar {
         color: white;
         background-color: rgb(25, 135, 84);
         padding: 6px 12px;
@@ -418,7 +314,7 @@ ion-icon {
         margin-top: 10px;
     }
 
-    .detalle:active {
+    .btn_agregar:active {
         box-shadow: 0 0 3px 2px forestgreen;
         background-color: #cccccc;
         color: darkgreen;
@@ -526,10 +422,7 @@ ion-icon {
         margin-bottom: 10px;
     }
 
-    #redes .icono:hover {
-        transform: scale(1.3) rotate(360deg);
-        transition: 0.3s;
-    }
+
 
     /*=============== Pie de Pagina ================*/
     #piePagina {
@@ -559,10 +452,7 @@ ion-icon {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    ion-icon {
-        font-size: 30px;
-        color: white;
-    }
+
 
     #destacados article img {
         border-radius: 8px;
@@ -576,14 +466,14 @@ ion-icon {
     }
 
 
-    .detalle {
+    .btn_agregar {
         color: white;
         background-color: rgb(25, 135, 84);
         padding: 6px 12px;
         border-radius: 8px;
     }
 
-    .detalle:active {
+    .btn_agregar:active {
         box-shadow: 0 0 3px 2px forestgreen;
         background-color: #cccccc;
         color: darkgreen;
@@ -591,14 +481,14 @@ ion-icon {
     .producto.card{
         position: relative;
     }
-    .producto.card .detalle {
+    .producto.card .btn_agregar {
         position: absolute;
         top: 15%;
         left: 8%;
         transform: translate(-50%,-50%) rotate(-45deg);
         font-size: 1.2rem;
     }
-    .producto.card .detalle:hover{
+    .producto.card .btn_agregar:hover{
         box-shadow: 0 0 10px 3px var(--green-500);
     }
 
