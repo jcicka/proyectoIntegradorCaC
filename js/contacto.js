@@ -9,9 +9,26 @@ function validarEmail(){
     }
 }
 
+function fetchData(){
+
+    const data = {
+        username:  document.getElementById('email').value , 
+        password: document.getElementById('contraseña').value
+    }
+
+    fetch('http://localhost:3000/login', {
+        method: POST,
+        body: data
+    })
+    .then(response => response.json())
+    .catch(error => console.error('Error:', error));
+
+
+}
 
 function validarLogin(){
     validarEmail()
+    fetchData()
 }
 
 function validarContacto() {
@@ -26,3 +43,5 @@ function validarContacto() {
     }
 
 }
+
+
